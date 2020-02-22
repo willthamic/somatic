@@ -1,0 +1,61 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#age {
+  width: 100px;
+}
+
+#height1, #height2 {
+  width:50px;
+}
+
+#sex {
+  width: 100px;
+}
+
+#weight {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+p, input {
+  font-family: IBM Plex Sans;
+}
+
+form > p {
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+form > input {
+  padding: 4px;
+}
+
+canvas {
+  width:100%;
+}
+
+#arrow {
+  margin: 20px auto 20px auto;
+}
+
+* {
+  font-family: IBM Plex Sans !important;
+}
+
+#chip {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: red;
+}
