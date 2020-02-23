@@ -277,7 +277,7 @@ class Demo extends Component {
   }
 
   render() {
-    if (this.state.exercises.length <= 0) {
+    if (this.state.exercises.length <= 0 && this.state.loading == false) {
       this.props.history.push("/Complete/");
     }
     return (
