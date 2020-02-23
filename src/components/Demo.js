@@ -49,6 +49,7 @@ class Demo extends Component {
   constructor(props) {
     super(props, Demo.defaultProps);
     this.state = {
+      obtained: false,
       loading: true,
       goingDown: true,
       bendRemaining: 5,
@@ -73,6 +74,7 @@ class Demo extends Component {
       const exercises = res.data.message.exercises;
       console.log(exercises);
       this.setState({ exercises: exercises });
+      this.setState({ obtained: true });
     });
 
     try {
@@ -277,7 +279,7 @@ class Demo extends Component {
   }
 
   render() {
-    if (this.state.exercises.length <= 0 && this.state.loading == false) {
+    if (this.state.exercises.length <= 0 && this.state.obtained) {
       this.props.history.push("/Complete/");
     }
     return (
