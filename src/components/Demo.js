@@ -279,9 +279,6 @@ class Demo extends Component {
   }
 
   render() {
-    if (this.state.exercises.length <= 0 && this.state.obtained) {
-      this.props.history.push("/Complete/");
-    }
     return (
       <div>
         {/* <Alert variant="danger">Can't detect your whole body</Alert> */}
