@@ -277,10 +277,9 @@ class Demo extends Component {
   }
 
   render() {
-    // if (this.state.exercises.length <= 0) {
-    //   window.location.href =
-    //     "https://docs.google.com/forms/d/e/1FAIpQLSfp5TiR1C_J6lk2BfyCM8nHu6NVLK-2YE01ua0rxg9Qm-hPvw/viewform?usp=sf_link";
-    // }
+    if (this.state.exercises.length <= 0) {
+      this.props.history.push("/Complete/");
+    }
     return (
       <div>
         {/* <Alert variant="danger">Can't detect your whole body</Alert> */}
